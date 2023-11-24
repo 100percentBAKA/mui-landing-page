@@ -1,11 +1,17 @@
-import './App.css';
+
+// * Components
+import Navbar from "./components/Navbar";
+
+//* MUI Components
+
+//* MUI Icons
+
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        Hello react
-      </header>
+      <Navbar />
     </div>
   );
 }
