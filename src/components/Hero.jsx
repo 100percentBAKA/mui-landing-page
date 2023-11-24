@@ -25,7 +25,9 @@ const CustomHeroBox = styled(Box)(({ theme }) => ({
 
 export default function Hero() {
   return (
-    <Box sx={{ backgroundColor: "#E6F0FF", minHeight: "80vh" }}>
+    <Box
+      sx={{ backgroundColor: "#E6F0FF", minHeight: "80vh", paddingBottom: 2 }}
+    >
       <Container>
         <Navbar />
 
