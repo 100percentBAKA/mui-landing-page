@@ -14,10 +14,12 @@ function App() {
   return (
     <div className="App">
       <Hero />
-      <Reviews />
+      <Reviews /> */
       <Guide />
     </div>
   );
 }
+
+// Git debug comment
 
 export default App;
