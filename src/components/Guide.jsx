@@ -51,6 +51,7 @@ export default function Guide() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
+        marginBottom: 8,
       }}
     >
       <div

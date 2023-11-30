@@ -2,6 +2,7 @@
 import Hero from "./components/Hero";
 import Reviews from "./components/Reviews";
 import Guide from './components/Guide'
+import Properties from "./components/Properties";
 
 //* MUI Components
 
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <Reviews />
       <Guide />
+      <Properties />
     </div>
   );
 }
