@@ -12,10 +12,10 @@ import { Box, Container, Typography, styled } from "@mui/material";
 
 // * Styled Components
 const CustomHeroBox = styled(Box)(({ theme }) => ({
-  marginTop: theme.spacing(3),
-  gap: theme.spacing(5),
   display: "flex",
   justifyContent: "center",
+  gap: theme.spacing(5),
+  marginTop: theme.spacing(3),
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
     alignItems: "center",
@@ -23,10 +23,25 @@ const CustomHeroBox = styled(Box)(({ theme }) => ({
   },
 }));
 
+const Title = styled(Typography)(({ theme }) => ({
+  fontSize: "64px",
+  color: "#000336",
+  fontWeight: "bold",
+  margin: theme.spacing(4, 0, 4, 0),
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "40px",
+  },
+}));
+
 export default function Hero() {
   return (
     <Box
-      sx={{ backgroundColor: "#E6F0FF", minHeight: "80vh", paddingBottom: 2 }}
+      sx={{
+        backgroundColor: "#E6F0FF",
+        minHeight: "80vh",
+        paddingBottom: 2,
+        marginBottom: 6,
+      }}
     >
       <Container>
         <Navbar />
@@ -45,9 +60,9 @@ export default function Hero() {
             >
               Welcome to Besnik Agency
             </Typography>
-            <Typography variant="h2">
+            <Title variant="h2">
               Discover a place where you'll love to live.
-            </Typography>
+            </Title>
             <Typography
               variant="body2"
               sx={{ fontSize: "18px", color: "#5A6473", my: 4 }}
@@ -64,7 +79,11 @@ export default function Hero() {
           </Box>
 
           <Box sx={{ flex: 1.25 }}>
-            <img src={HeroImg} alt="hero illustration" />
+            <img
+              src={HeroImg}
+              alt="hero illustration"
+              style={{ maxWidth: "100%" }}
+            />
           </Box>
         </CustomHeroBox>
       </Container>

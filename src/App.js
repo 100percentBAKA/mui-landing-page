@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Hero />
-      <Reviews /> */
+      <Reviews />
       <Guide />
     </div>
   );
