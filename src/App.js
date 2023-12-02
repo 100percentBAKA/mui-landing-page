@@ -5,6 +5,7 @@ import Guide from './components/Guide'
 import Properties from "./components/Properties";
 import MoreDetail from "./components/MoreDetail";
 import Featured from "./components/Featured";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Properties />
       <MoreDetail />
       <Featured />
+      <Footer />
     </div>
   );
 }
