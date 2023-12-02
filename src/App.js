@@ -4,11 +4,7 @@ import Reviews from "./components/Reviews";
 import Guide from './components/Guide'
 import Properties from "./components/Properties";
 import MoreDetail from "./components/MoreDetail";
-
-//* MUI Components
-
-
-//* MUI Icons
+import Featured from "./components/Featured";
 
 
 function App() {
@@ -20,6 +16,7 @@ function App() {
       <Guide />
       <Properties />
       <MoreDetail />
+      <Featured />
     </div>
   );
 }
